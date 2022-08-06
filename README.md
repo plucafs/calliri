@@ -1,3 +1,4 @@
+![calliri_icon](/github/icon/calliri_96.png) 
 # Calliri
 Local lyrics manager
 
