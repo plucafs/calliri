@@ -1,0 +1,2 @@
+# Calliri
+Local lyrics manager
