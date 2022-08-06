@@ -6,7 +6,6 @@ Local lyrics manager
 
 # Features
 - Add a card specifying song, author and album. Then, add the lyrics
-- Make changes on the go
 - Custom font lyric size
 - Auto-save
 
