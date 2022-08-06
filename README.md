@@ -1,6 +1,19 @@
 # Calliri
 Local lyrics manager
 
+![calliri_screenshot](github/screenshot/calliri.png)
+
+# Features
+- Add a card specifying song, author and album. Then, add the lyrics
+- Make changes on the go
+- Custom font lyric size
+- Auto-save
+
+# To do
+- Search song (currently the box is only a placeholder)
+- Dark theme
+- When adding a tab making it active by default
+
 # Credit
 Made with [Godot Engine](https://godotengine.org/)
 
