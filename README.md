@@ -8,6 +8,7 @@ Local lyrics manager
 - Add lyrics with attached song, author and album name
 - Change the UI font size
 - Change the theme (light/dark)
+- Auto-save when a change occures
 
 # To do
 - Search song
