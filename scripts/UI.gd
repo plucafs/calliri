@@ -1,12 +1,10 @@
 extends Control
 
 export(PackedScene) var card_scene = preload("res://scenes/SongCardEvolution.tscn")
-var abc = ["a", "b", "c"]
 
 func _ready():
 	load_lyrics()
 	OS.set_min_window_size(Vector2(640, 500))
-	print("res://scenes/UI.tscn".get_basename())
 
 func _on_AddSong_create_label():
 	var song_name: String = $UIContainer/AddSong/AddSongContainer/NameLineEdit.text

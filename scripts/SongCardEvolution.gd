@@ -21,7 +21,7 @@ func delete_tscn():
 
 func _on_LyricSizeButton_pressed():
 	$MarginContainer/HBoxContainer/TextEdit.get_font("font").size += 4
-	if $MarginContainer/HBoxContainer/TextEdit.get_font("font").size > 64:
+	if $MarginContainer/HBoxContainer/TextEdit.get_font("font").size > 56:
 		$MarginContainer/HBoxContainer/TextEdit.get_font("font").size = 24
 
 func _on_TitleLabel_text_changed(new_text):

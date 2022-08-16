@@ -6,7 +6,6 @@ onready var color_rect = get_viewport().get_node("Main/ColorRect")
 onready var dark_theme_file = preload("res://themes/dark_theme.tres")
 onready var light_theme_file = preload("res://themes/theme.tres")
 
-
 signal create_label
 
 func _on_AddSongButton_pressed():
