@@ -1,5 +1,5 @@
 ![calliri_icon](/github/icon/calliri_96.png) 
-# Calliri
+# calliri
 Local lyrics manager
 
 ![calliri_screenshot](github/screenshot/calliri.png)
