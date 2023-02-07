@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scenes/SongLyrics.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/LyricsSceneManager.gd" type="Script" id=1]
 [ext_resource path="res://scenes/AddSong.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scripts/UI.gd" type="Script" id=4]
 
@@ -9,29 +9,45 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 4 )
 
-[node name="UIContainer" type="VBoxContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 25.0
-margin_top = 27.0
-margin_right = -25.0
+custom_constants/margin_right = 16
+custom_constants/margin_top = 16
+custom_constants/margin_left = 16
+
+[node name="UIContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 1264.0
+margin_bottom = 720.0
 custom_constants/separation = 30
 
-[node name="AddSong" parent="UIContainer" instance=ExtResource( 2 )]
-anchor_left = 0.0
+[node name="SongOptions" parent="MarginContainer/UIContainer" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 1230.0
+margin_right = 1248.0
 margin_bottom = 40.0
 rect_min_size = Vector2( 400, 40 )
+__meta__ = {
+"_edit_use_anchors_": true,
+"_editor_description_": ""
+}
 
-[node name="SongLyrics" parent="UIContainer" instance=ExtResource( 1 )]
-anchor_right = 0.0
-anchor_bottom = 0.0
+[node name="SongManager" type="Control" parent="MarginContainer/UIContainer"]
 margin_top = 70.0
-margin_right = 1230.0
-margin_bottom = 693.0
-rect_min_size = Vector2( 0, 500 )
+margin_right = 1248.0
+margin_bottom = 704.0
+size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource( 1 )
 
-[connection signal="create_label" from="UIContainer/AddSong" to="." method="_on_AddSong_create_label"]
+[node name="TabContainer" type="TabContainer" parent="MarginContainer/UIContainer/SongManager"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tab_align = 0
+drag_to_rearrange_enabled = true
+
+[connection signal="create_song" from="MarginContainer/UIContainer/SongOptions" to="." method="_on_SongOptions_create_song"]

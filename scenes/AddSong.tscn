@@ -8,15 +8,14 @@
 bg_color = Color( 0.6, 0.6, 0.6, 0 )
 
 [node name="AddSong" type="Control"]
-anchor_left = 0.0234375
-anchor_right = 0.976563
-anchor_bottom = 0.0722222
-rect_min_size = Vector2( 1000, 0 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_bottom = -680.0
+rect_min_size = Vector2( 0, 50 )
 mouse_filter = 1
 size_flags_horizontal = 3
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_use_anchors_": true,
 "_editor_description_": ""
 }
 
@@ -25,11 +24,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 20
+custom_constants/separation = 16
 alignment = 1
 
 [node name="NameLineEdit" type="LineEdit" parent="AddSongContainer"]
-margin_right = 213.0
+unique_name_in_owner = true
+margin_right = 229.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -37,8 +37,9 @@ align = 1
 placeholder_text = "Name"
 
 [node name="AuthorLineEdit" type="LineEdit" parent="AddSongContainer"]
-margin_left = 233.0
-margin_right = 447.0
+unique_name_in_owner = true
+margin_left = 245.0
+margin_right = 475.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -46,8 +47,9 @@ align = 1
 placeholder_text = "Author"
 
 [node name="AlbumLineEdit" type="LineEdit" parent="AddSongContainer"]
-margin_left = 467.0
-margin_right = 681.0
+unique_name_in_owner = true
+margin_left = 491.0
+margin_right = 721.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -55,16 +57,16 @@ align = 1
 placeholder_text = "Album"
 
 [node name="AddSongButton" type="Button" parent="AddSongContainer"]
-margin_left = 701.0
-margin_right = 915.0
+margin_left = 737.0
+margin_right = 967.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Add song"
 
 [node name="SearchSongLineEdit" type="LineEdit" parent="AddSongContainer"]
-margin_left = 935.0
-margin_right = 1149.0
+margin_left = 983.0
+margin_right = 1213.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -72,10 +74,24 @@ align = 1
 placeholder_text = "Search"
 
 [node name="ThemeButton" type="CheckButton" parent="AddSongContainer"]
-margin_left = 1169.0
-margin_right = 1220.0
+visible = false
+margin_left = 1098.0
+margin_right = 1149.0
 margin_bottom = 51.0
-rect_min_size = Vector2( 51, 51 )
+custom_icons/off = ExtResource( 2 )
+custom_icons/on = ExtResource( 3 )
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 1 )
+custom_styles/focus = SubResource( 1 )
+custom_styles/disabled = SubResource( 1 )
+custom_styles/hover_pressed = SubResource( 1 )
+custom_styles/normal = SubResource( 1 )
+pressed = true
+
+[node name="ThemeButton2" type="CheckButton" parent="AddSongContainer"]
+margin_left = 1229.0
+margin_right = 1280.0
+margin_bottom = 51.0
 custom_icons/off = ExtResource( 2 )
 custom_icons/on = ExtResource( 3 )
 custom_styles/hover = SubResource( 1 )
@@ -87,5 +103,5 @@ custom_styles/normal = SubResource( 1 )
 pressed = true
 
 [connection signal="pressed" from="AddSongContainer/AddSongButton" to="." method="_on_AddSongButton_pressed"]
-[connection signal="text_changed" from="AddSongContainer/SearchSongLineEdit" to="." method="_on_SearchSongLineEdit_text_changed"]
 [connection signal="toggled" from="AddSongContainer/ThemeButton" to="." method="_on_ThemeButton_toggled"]
+[connection signal="toggled" from="AddSongContainer/ThemeButton2" to="." method="_on_ThemeButton2_toggled"]

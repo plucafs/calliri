@@ -3,8 +3,7 @@ extends Control
 export(Array) var lyrics_scene = []
 
 func _ready():
-	lyrics_scene.resize(0)
-	print("Lyrics scene list size is " + str(lyrics_scene.size()))
+	lyrics_scene.resize(0) # If not the song get duplicated
 	add_scene_to_list()
 	print("Lyrics scene list size after add_scene_to_list is " + str(lyrics_scene.size()))
 	
@@ -22,11 +21,8 @@ func add_scene_to_list():
 	
 	print("Lyrics scene items are: " + str(lyrics_scene))
 	
-func save_lyrics(node):
+func save_lyrics(node: Node):
 	var scene: PackedScene = PackedScene.new()
 	scene.pack(node)
 	ResourceSaver.save("user://" + node.get_name() + ".tscn", scene)
-	
-func _on_Card_Deleted():
-	print("Card deleted")
 
