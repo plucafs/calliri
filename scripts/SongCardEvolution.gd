@@ -1,8 +1,16 @@
 extends Control
 
 onready var lyrics: TextEdit = $"%Lyrics"
-onready var timer: Timer = $CanvasLayer/Timer
-#onready var confirmation_dialog: ConfirmationDialog = $CanvasLayer/ConfirmationDialog
+onready var title_label: LineEdit = $"%TitleLabel"
+onready var author_label: LineEdit = $"%AuthorLabel"
+onready var album_label: LineEdit = $"%AlbumLabel"
+onready var save: Button = $"%Save"
+
+func _ready() -> void:
+	save.disabled = true
+	title_label.caret_position = 0
+	author_label.caret_position = 0
+	album_label.caret_position = 0
 
 func _on_DeleteButton_pressed():
 	$CanvasLayer/ConfirmationDialog.show()
@@ -26,21 +34,34 @@ func _on_LyricSizeButton_pressed():
 		lyrics.get_font("font").size = 18
 
 func _on_TitleLabel_text_changed(new_text):
-	timer.start()
+	if save.disabled == true:
+		save.disabled = false
+	$"%SaveTimer".start()
 
 
 func _on_AuthorLabel_text_changed(new_text):
-	timer.start()
-
+	if save.disabled == true:
+		save.disabled = false
+	$"%SaveTimer".start()
 
 func _on_AlbumLabel_text_changed(new_text):
-	timer.start()
+	if save.disabled == true:
+		save.disabled = false
+	$"%SaveTimer".start()
 
 
 func _on_TextEdit_text_changed():
-	timer.start()
+	if save.disabled == true:
+		save.disabled = false
+	$"%SaveTimer".start()
 
 
-func _on_Timer_timeout() -> void:
+func _on_Save_pressed() -> void:
+	$"%SaveTimer".stop()
 	LyricsSceneManager.save_lyrics(self)
-	print("Scene saved")
+	save.disabled = true
+
+
+func _on_SaveTimer_timeout() -> void:
+	LyricsSceneManager.save_lyrics(self)
+	save.disabled = true

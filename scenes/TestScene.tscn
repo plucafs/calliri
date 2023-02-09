@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://themes/theme.tres" type="Theme" id=1]
+[ext_resource path="res://themes/new_theme_light.tres" type="Theme" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
 
 [node name="TestScene" type="Control"]
@@ -29,80 +29,80 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/ScrollContainer"]
-margin_right = 1230.0
-margin_bottom = 1847.0
+margin_right = 1232.0
+margin_bottom = 1904.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 50
 
 [node name="Buttons" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_right = 1230.0
-margin_bottom = 32.0
+margin_right = 1232.0
+margin_bottom = 48.0
 custom_constants/separation = 50
 
 [node name="Button" type="Button" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_right = 82.0
-margin_bottom = 32.0
+margin_right = 83.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Button"
 
 [node name="CheckBox" type="CheckBox" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 132.0
-margin_right = 255.0
-margin_bottom = 32.0
+margin_left = 133.0
+margin_right = 247.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Checkbox"
 
 [node name="CheckButton" type="CheckButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 305.0
-margin_right = 438.0
-margin_bottom = 32.0
+margin_left = 297.0
+margin_right = 430.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Check"
 
 [node name="ColorPickerButton" type="ColorPickerButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 488.0
-margin_right = 570.0
-margin_bottom = 32.0
+margin_left = 480.0
+margin_right = 564.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 
 [node name="MenuButton" type="MenuButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 620.0
-margin_right = 702.0
-margin_bottom = 32.0
+margin_left = 614.0
+margin_right = 697.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Menu"
 
 [node name="OptionButton" type="OptionButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 752.0
-margin_right = 834.0
-margin_bottom = 32.0
+margin_left = 747.0
+margin_right = 831.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 
 [node name="ToolButton" type="ToolButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 884.0
-margin_right = 966.0
-margin_bottom = 32.0
+margin_left = 881.0
+margin_right = 964.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Tool"
 
 [node name="LinkButton" type="LinkButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
-margin_left = 1016.0
+margin_left = 1014.0
 margin_right = 1098.0
-margin_bottom = 32.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 text = "Link"
 
 [node name="TextureButton" type="TextureButton" parent="MarginContainer/ScrollContainer/VBoxContainer/Buttons"]
 margin_left = 1148.0
-margin_right = 1230.0
-margin_bottom = 32.0
+margin_right = 1232.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 
 [node name="Popups" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_top = 82.0
-margin_right = 1230.0
-margin_bottom = 282.0
+margin_top = 98.0
+margin_right = 1232.0
+margin_bottom = 298.0
 rect_min_size = Vector2( 0, 200 )
 size_flags_horizontal = 3
 custom_constants/separation = 50
@@ -116,14 +116,14 @@ size_flags_horizontal = 3
 [node name="WindowDialog" type="WindowDialog" parent="MarginContainer/ScrollContainer/VBoxContainer/Popups"]
 visible = true
 margin_left = 320.0
-margin_right = 590.0
+margin_right = 591.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="PopupDialog" type="PopupDialog" parent="MarginContainer/ScrollContainer/VBoxContainer/Popups"]
 visible = true
-margin_left = 640.0
-margin_right = 910.0
+margin_left = 641.0
+margin_right = 911.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
@@ -135,32 +135,32 @@ size_flags_horizontal = 3
 
 [node name="PopupPanel" type="PopupPanel" parent="MarginContainer/ScrollContainer/VBoxContainer/Popups"]
 visible = true
-margin_left = 960.0
-margin_right = 1230.0
+margin_left = 961.0
+margin_right = 1232.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="Container" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_top = 332.0
-margin_right = 1230.0
-margin_bottom = 847.0
+margin_top = 348.0
+margin_right = 1232.0
+margin_bottom = 904.0
 custom_constants/separation = 50
 
 [node name="ColorPicker" type="ColorPicker" parent="MarginContainer/ScrollContainer/VBoxContainer/Container"]
-margin_right = 340.0
-margin_bottom = 515.0
+margin_right = 342.0
+margin_bottom = 556.0
 size_flags_horizontal = 3
 
 [node name="GraphNode" type="GraphNode" parent="MarginContainer/ScrollContainer/VBoxContainer/Container"]
-margin_left = 390.0
-margin_right = 553.0
-margin_bottom = 515.0
+margin_left = 392.0
+margin_right = 555.0
+margin_bottom = 556.0
 size_flags_horizontal = 3
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/Container"]
-margin_left = 603.0
-margin_right = 803.0
-margin_bottom = 515.0
+margin_left = 605.0
+margin_right = 805.0
+margin_bottom = 556.0
 size_flags_horizontal = 3
 columns = 3
 
@@ -215,21 +215,21 @@ margin_bottom = 200.0
 texture = ExtResource( 2 )
 
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/Container"]
-margin_left = 853.0
-margin_right = 1016.0
-margin_bottom = 515.0
+margin_left = 855.0
+margin_right = 1018.0
+margin_bottom = 556.0
 size_flags_horizontal = 3
 
 [node name="TabContainer" type="TabContainer" parent="MarginContainer/ScrollContainer/VBoxContainer/Container"]
-margin_left = 1066.0
-margin_right = 1230.0
-margin_bottom = 515.0
+margin_left = 1068.0
+margin_right = 1232.0
+margin_bottom = 556.0
 size_flags_horizontal = 3
 
 [node name="Tabs" type="Tabs" parent="MarginContainer/ScrollContainer/VBoxContainer/Container/TabContainer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 39.0
+margin_top = 32.0
 
 [node name="Tabs2" type="Tabs" parent="MarginContainer/ScrollContainer/VBoxContainer/Container/TabContainer"]
 visible = false
@@ -244,17 +244,17 @@ anchor_bottom = 1.0
 margin_top = 39.0
 
 [node name="GraphEdit" type="GraphEdit" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_top = 897.0
-margin_right = 1230.0
-margin_bottom = 1097.0
+margin_top = 954.0
+margin_right = 1232.0
+margin_bottom = 1154.0
 rect_min_size = Vector2( 0, 200 )
 size_flags_horizontal = 3
 scroll_offset = Vector2( -10, 0 )
 
 [node name="Slider" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_top = 1147.0
-margin_right = 1230.0
-margin_bottom = 1347.0
+margin_top = 1204.0
+margin_right = 1232.0
+margin_bottom = 1404.0
 rect_min_size = Vector2( 0, 200 )
 
 [node name="HScrollBar" type="HScrollBar" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
@@ -264,131 +264,131 @@ rect_min_size = Vector2( 200, 0 )
 
 [node name="VScrollBar" type="VScrollBar" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
 margin_left = 204.0
-margin_right = 214.0
+margin_right = 212.0
 margin_bottom = 200.0
 
 [node name="HSlider" type="HSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
-margin_left = 218.0
-margin_right = 418.0
+margin_left = 216.0
+margin_right = 416.0
 margin_bottom = 16.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="VSlider" type="VSlider" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
-margin_left = 422.0
-margin_right = 438.0
+margin_left = 420.0
+margin_right = 436.0
 margin_bottom = 200.0
 
 [node name="ProgressBar" type="ProgressBar" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
-margin_left = 442.0
-margin_right = 642.0
-margin_bottom = 29.0
+margin_left = 440.0
+margin_right = 640.0
+margin_bottom = 22.0
 rect_min_size = Vector2( 200, 0 )
 
 [node name="SpinBox" type="SpinBox" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
-margin_left = 646.0
-margin_right = 734.0
+margin_left = 644.0
+margin_right = 724.0
 margin_bottom = 200.0
 
 [node name="TextureProgress" type="TextureProgress" parent="MarginContainer/ScrollContainer/VBoxContainer/Slider"]
-margin_left = 738.0
-margin_right = 739.0
+margin_left = 728.0
+margin_right = 729.0
 margin_bottom = 200.0
 
 [node name="Separator" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_top = 1397.0
-margin_right = 1230.0
-margin_bottom = 1597.0
+margin_top = 1454.0
+margin_right = 1232.0
+margin_bottom = 1654.0
 rect_min_size = Vector2( 0, 200 )
 size_flags_horizontal = 3
 
 [node name="HSeparator" type="HSeparator" parent="MarginContainer/ScrollContainer/VBoxContainer/Separator"]
-margin_right = 613.0
+margin_right = 614.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VSeparator" type="VSeparator" parent="MarginContainer/ScrollContainer/VBoxContainer/Separator"]
-margin_left = 617.0
-margin_right = 1230.0
+margin_left = 618.0
+margin_right = 1232.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Misc" type="HBoxContainer" parent="MarginContainer/ScrollContainer/VBoxContainer"]
-margin_top = 1647.0
-margin_right = 1230.0
-margin_bottom = 1847.0
+margin_top = 1704.0
+margin_right = 1232.0
+margin_bottom = 1904.0
 rect_min_size = Vector2( 0, 200 )
 size_flags_horizontal = 3
 
 [node name="ItemList" type="ItemList" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_right = 98.0
+margin_right = 99.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="Label" type="Label" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 102.0
-margin_top = 85.0
-margin_right = 201.0
-margin_bottom = 114.0
+margin_left = 103.0
+margin_top = 89.0
+margin_right = 202.0
+margin_bottom = 111.0
 size_flags_horizontal = 3
 
 [node name="LineEdit" type="LineEdit" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 205.0
-margin_right = 304.0
+margin_left = 206.0
+margin_right = 305.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 308.0
-margin_right = 407.0
+margin_left = 309.0
+margin_right = 408.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="Panel" type="Panel" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 411.0
-margin_right = 510.0
+margin_left = 412.0
+margin_right = 511.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="ReferenceRect" type="ReferenceRect" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 514.0
-margin_right = 613.0
+margin_left = 515.0
+margin_right = 614.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 617.0
-margin_right = 715.0
+margin_left = 618.0
+margin_right = 717.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="Tabs" type="Tabs" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 719.0
-margin_right = 818.0
+margin_left = 721.0
+margin_right = 820.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="TextEdit" type="TextEdit" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 822.0
-margin_right = 921.0
+margin_left = 824.0
+margin_right = 923.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 925.0
-margin_right = 1024.0
+margin_left = 927.0
+margin_right = 1026.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="Tree" type="Tree" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 1028.0
-margin_right = 1127.0
+margin_left = 1030.0
+margin_right = 1129.0
 margin_bottom = 200.0
 size_flags_horizontal = 3
 
 [node name="VideoPlayer" type="VideoPlayer" parent="MarginContainer/ScrollContainer/VBoxContainer/Misc"]
-margin_left = 1131.0
-margin_right = 1230.0
+margin_left = 1133.0
+margin_right = 1232.0
 margin_bottom = 200.0
 size_flags_horizontal = 3

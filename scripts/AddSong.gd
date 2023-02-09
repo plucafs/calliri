@@ -3,7 +3,8 @@ extends Control
 onready var main = get_viewport().get_node("Main")
 onready var color_rect = get_viewport().get_node("Main/ColorRect")
 onready var dark_theme_file = preload("res://themes/dark_theme.tres")
-onready var light_theme_file = preload("res://themes/theme.tres")
+onready var new_light_theme = preload("res://themes/new_theme_light.tres")
+
 
 signal create_song
 
@@ -18,7 +19,7 @@ func _on_AddSongButton_pressed():
 
 func _on_ThemeButton_toggled(button_pressed):
 	if button_pressed == true:
-		main.set_theme(light_theme_file)
+		main.set_theme(new_light_theme)
 		color_rect.set_frame_color(Color("fbfbf2"))
 	else:
 		main.set_theme(dark_theme_file)
@@ -27,7 +28,7 @@ func _on_ThemeButton_toggled(button_pressed):
 
 func _on_ThemeButton2_toggled(button_pressed: bool) -> void:
 	if button_pressed == true:
-		main.set_theme(light_theme_file)
+		main.set_theme(new_light_theme)
 		color_rect.set_frame_color(Color("fbfbf2"))
 	else:
 		main.set_theme(dark_theme_file)
